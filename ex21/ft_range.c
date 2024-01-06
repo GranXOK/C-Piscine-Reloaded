@@ -8,18 +8,19 @@ int main()
 	int min;
 	int max;
 	int i;
-	int *array;
+	int *resultado;
 
 	i = 0;
-	array[i] = 0;
 	min = 8;
 	max = 13;
-	ft_range(min, max);
+	resultado = ft_range(min, max);
 	while(min < max)
 	{
-		printf("%d \n", array[i]);
+		printf("%d \n", resultado[i]);
+		min++;
 		i++;
 	}
+	free(resultado);
 	return (0);
 }
 
